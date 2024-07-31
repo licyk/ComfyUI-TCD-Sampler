@@ -2,7 +2,7 @@
 name = "comfyui-tcd-sampler"
 description = "This extension is a node that directly expands the functionality of KSampler, adding the TCD sampling to KSampler."
 version = "1.0.0"
-license = "GNU General Public License v3.0"
+license = { text = "GNU General Public License v3.0" }
 
 [project.urls]
 Repository = "https://github.com/licyk/ComfyUI-TCD-Sampler"
