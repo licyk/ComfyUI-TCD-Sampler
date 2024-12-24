@@ -1,5 +1,6 @@
 from . import tcd_sampling
 from .tcd_sampling import sample_tcd, sample_tcd_euler_a
+from .tcd_scheduler import TCDScheduler
 
 
 if not tcd_sampling.INITIALIZED:
@@ -13,4 +14,8 @@ if not tcd_sampling.INITIALIZED:
     tcd_sampling.INITIALIZED = True
 
 
-NODE_CLASS_MAPPINGS = {}
+NODE_CLASS_MAPPINGS = {
+    "TCDScheduler": TCDScheduler
+}
+
+__all__ = ['NODE_CLASS_MAPPINGS']
